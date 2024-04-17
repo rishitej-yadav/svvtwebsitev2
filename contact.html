@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="KM Online Works">
+	<meta name="keywords" content="KM Online Works">
+	<meta name="author" content="Kamran Mubarik">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Contact</title>
+</head>
+<body onload="preloader()">
+	<div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="container" id="wrapper">
+		<div class="row">
+			<div class="col-md-3" id="sidebar">
+				<div class="logo">
+					<img src="img/logo.jpeg" alt="logo">
+				</div>
+				<ul class="nav flex-column">
+					<li class="nav-item">						 
+						<a class="nav-link" href="index.html"><i class="fal fa-home-alt"></i> Home</a>
+					</li>
+					<li class="nav-item">						 
+						<a class="nav-link" href="portfolio.html"><i class="fal fa-tasks"></i> Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html"><i class="fal fa-info"></i> About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contact.html"><i class="fal fa-address-card"></i> Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="download.html"><i class="fal fa-download"></i> Download</a>
+					</li>
+				</ul>
+				<i class="far fa-ellipsis-v"></i>
+				<div class="copyright">
+					<p>&copy; 2021 | KM Online Works</p>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div id="main-area">
+					<div class="content-section contact">						
+						<div class="row">
+							<div class="col-md-5 order-md-2">
+								<div class="card" style="width: 100%;">
+									<div class="card-body">
+								        <h5 class="card-title">For Web Development</h5>
+								        <img src="img/logo.jpeg" alt="km online works">
+								        <p class="card-text"><i class="fal fa-envelope"></i> <a href="mailto:p.rishitej@gmail.com" style="color:#fff;" target="_blank">p.rishitej@gmail.com</a></p>
+								        <p class="card-text">
+								        	<a href="https://www.github.com/rishitej" style="color: white;" target="_blank">
+								        		<i class="fab fa-github"></i> Github page
+								        	</a>
+								        </p>
+								        <p class="card-text">
+								        	<a href="https://rishitej.github.io/portfolio.github.io/" style="color: white;" target="_blank">
+								        		<i class="fal fa-globe"></i> Portfolio
+								        	</a>
+								        </p>
+								     </div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7 order-lg-1">
+								<div class="card" style="width: 100%;">
+									<div class="section-description">
+										<h2 class="display-4"><i class="fal fa-pencil"></i> Get in Touch</h2>
+									</div>
+									<form action="https://formspree.io/f/mdobywwn" method="POST">
+									  <div class="form-group">
+									    <label>Your Name</label>
+									    <input type="text" name="Name" class="form-control" required style="margin-left: 30%; width: 50%;">
+									  </div>
+									  <div class="form-group">
+									    <label>Email address</label>
+									    <input type="email" name="Email" class="form-control" required style="margin-left: 30%; width: 50%;">
+									  </div>
+									  <div class="form-group">
+									    <label>Subject</label>
+									    <textarea name="Subject" class="form-control" required style="margin-left: 30%; width: 50%;"></textarea>
+									  </div>
+									  <div class="form-group">
+									    <label>Message</label>
+									    <textarea name="Message" class="form-control" required style="margin-left: 30%; width: 50%;"></textarea>
+									  </div>
+									  <p>What vehicle do you own?</p>
+									  <div style="padding-left: 20%;">
+									<label>
+										<input type="radio" name="option" value="Car">
+										Car
+									</label>
+									<label>
+										<input type="radio" name="option" value="Bike">
+										Bike
+									</label>
+									<label>
+										<input type="radio" name="option" value="Cycle">
+										Cycle
+									</label></div>
+									  <br>									  
+									  <button type="button" onclick="validateForm()" class="btn btn-primary btn-sm">Submit</button>
+								  </form>
+								</div>
+							</div>
+						</div>						
+					</div> <!-- Content Section End -->
+					<div class="footer">
+						<div class="row">													
+							<div class="col-lg-4 col-md-12 order-lg-2"></div>
+							<div class="col-lg-8 col-md-12 order-lg-1 social-links">
+								<div class="social-links">
+									<a href="https://rishitej.github.io/portfolio.github.io/" target="_blank">
+										<i class="fas fa-globe"></i> Portfolio
+									</a>
+									<a href="mailto:p.rishitej@gmail.com" target="_blank">
+										<i class="fal fa-envelope"></i> Email
+									</a>
+									<a href="https://www.github.com/rishitej" target="_blank">
+										<i class="fab fa-github"></i> Github
+									</a>
+								</div>								
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- JS Script Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/custom-function.js"></script>
+	<script>
+		function validateForm() {
+			var options = document.getElementsByName('option');
+			var selectedOption = false;
+			
+			for(var i = 0; i < options.length; i++) {
+				if(options[i].checked) {
+					selectedOption = true;
+					var selectedValue = options[i].value;
+					break;
+				}
+			}
+			
+			if(!selectedOption) {
+				alert('Please select an option!');
+				return false;
+			}
+			
+			alert('You own a ' + selectedValue + ' !!!');
+			// You can submit the form here if needed
+		}
+	</script>
+</body>
+</html>
